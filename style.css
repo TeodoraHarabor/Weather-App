@@ -1,0 +1,159 @@
+body {
+  font-family: "Titillium Web", sans-serif;
+  color: #636363;
+  background-image: url("https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  background-repeat: no-repeat;
+  background-size: 2200px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+  padding: 2em;
+  border-radius: 30px;
+  width: 120%;
+  background-size: 150px;
+  margin: 1em;
+  overflow: hidden;
+}
+
+.fas {
+  color: #636363;
+}
+
+.search-box,
+.form-btn,
+.celsius-btn,
+.fahrenheit-btn {
+  margin-top: 15px;
+  padding: 6px;
+  border: 0.7px solid #636363;
+}
+
+.search-box,
+.form-btn {
+  border-radius: 5px;
+}
+
+.search-box {
+  width: 300px;
+  margin-left: 15px;
+}
+
+.form-btn,
+.celsius-btn,
+.fahrenheit-btn {
+  background: none;
+  width: 40px;
+}
+
+.form-btn:hover {
+  background-color: #636363;
+}
+
+.celsius-btn,
+.fahrenheit-btn {
+  border-radius: 155px;
+  color: #636363;
+}
+
+.celsius-btn {
+  margin-left: 23px;
+  background: white;
+}
+
+h1 {
+  padding: 15px 0 5px 20px;
+  font-size: 34px;
+}
+
+.date-description {
+  padding-left: 37px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.icon {
+  position: relative;
+  bottom: 17px;
+  left: 70px;
+}
+
+h2 {
+  position: relative;
+  right: 40px;
+}
+
+.current-temp {
+  font-size: 47px;
+}
+
+.weather-unit {
+  position: relative;
+  left: 2px;
+  bottom: 12px;
+}
+
+.weather-extra {
+  font-size: 14px;
+  position: relative;
+  left: 360px;
+  bottom: 25px;
+}
+
+li {
+  list-style: none;
+}
+
+.hour-forecast {
+  text-align: center;
+  margin: 50px 0 15px 0;
+  padding: 5px;
+}
+
+.hour-forecast img {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+}
+
+.col-2 {
+  padding: 0 10px;
+}
+
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.forecast-unit {
+  font-size: 11px;
+  position: relative;
+  bottom: 2.5px;
+}
+
+.author a {
+  color: #636363;
+  margin-left: 10px;
+}
+
+.author a:hover {
+  color: white;
+  text-decoration: solid;
+  text-decoration: none;
+}
+
+.author {
+  margin-left: 241px;
+}
