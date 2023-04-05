@@ -3,11 +3,12 @@
 ## Tools:
 
 HTML, CSS, JS </br>
+Openweather API </br>
 Deploy with SURGE
 
 ## Details:
 
--real information about the weather(Weather API) </br>
+-real information about the weather(Openweather API) </br>
 -the app is responsive for both desktop and mobile </br>
 -the app can display the weather depending on the user's location(only if the user allows access to the location) </br>
 -the weather is displayed for several hours </br>
