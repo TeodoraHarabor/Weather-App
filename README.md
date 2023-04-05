@@ -2,7 +2,7 @@
 
 ## PREVIEW:
 
-![image.png]
+![Alt text](https://weatherapp-th.surge.sh/)
 
 ## Tools:
 
