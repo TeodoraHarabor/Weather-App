@@ -2,7 +2,7 @@
 
 ## Tools:
 
-HTML, CSS, JS
+HTML, CSS, JS </br>
 Deploy with SURGE
 
 ## Details:
