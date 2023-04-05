@@ -143,7 +143,7 @@ currentLocation.addEventListener("click", function (event) {
 });
 
 function displayTempInFahrenheit(event) {
-  document.getElementById("fahrenheit").style.background = "#f7e4df";
+  document.getElementById("fahrenheit").style.background = "#475d68";
   document.getElementById("celsius").style.background = "none";
 
   let currentTempToF = document.querySelector("#temp");
@@ -194,7 +194,7 @@ changeUnitToF.addEventListener("click", displayTempInFahrenheit);
 
 function displayTempInCelsius(event) {
   document.getElementById("fahrenheit").style.background = "none";
-  document.getElementById("celsius").style.background = "#f7e4df";
+  document.getElementById("celsius").style.background = "#475d68";
 
   let currentTempToC = document.querySelector("#temp");
   currentTempToC.innerHTML = celsiusCurrentTemp;
