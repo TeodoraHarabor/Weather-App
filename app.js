@@ -49,12 +49,26 @@ function displayRealTemp(response) {
   } else {
     tempElement.innerHTML = Math.round(celsiusCurrentTemp * 1.8 + 32);
   }
-
+  console.log("Temp curenta:" + celsiusCurrentTemp);
+  changeBackground(celsiusCurrentTemp);
   let humidityElement = document.querySelector("#humidity");
   humidityElement.innerHTML = response.data.main.humidity;
 
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = Math.round(response.data.wind.speed * 3.6);
+}
+
+function changeBackground(celsiusTemp) {
+  let body = document.body;
+  if (celsiusTemp <= 2) {
+    body.style.backgroundImage = `url("https://images.pexels.com/photos/15148461/pexels-photo-15148461.jpeg?auto=compress&cs=tinysrgb&w=1600")`;
+  } else if (celsiusTemp > 2 && celsiusTemp <= 10) {
+    body.style.backgroundImage = `url("https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&w=1600")`;
+  } else if (celsiusTemp > 10 && celsiusTemp <= 20) {
+    body.style.backgroundImage = `url("https://images.pexels.com/photos/837494/pexels-photo-837494.jpeg?auto=compress&cs=tinysrgb&w=1600")`;
+  } else {
+    body.style.backgroundImage = `url("https://images.pexels.com/photos/164041/pexels-photo-164041.jpeg?auto=compress&cs=tinysrgb&w=1600")`;
+  }
 }
 
 function displayForecast(response) {
@@ -239,11 +253,15 @@ function displayTempInCelsius(event) {
   let changeUnitToF = document.querySelector("#fahrenheit");
   changeUnitToF.addEventListener("click", displayTempInFahrenheit);
 }
+
 let changeUnitToC = document.querySelector("#celsius");
 changeUnitToC.addEventListener("click", displayTempInCelsius);
 
 let celsiusCurrentTemp = null;
 
 let defaultUnit = document.querySelector(".active-unit");
+
+//display default mode as Celsius
+displayTempInCelsius();
 
 search("Brasov");
