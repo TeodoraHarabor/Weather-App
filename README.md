@@ -1,6 +1,6 @@
-# A View the weather app: https://weatherapp-th.surge.sh/
+# View the weather app: https://weatherapp-th.surge.sh/
 
-## A Tools:
+## Tools:
 
 HTML
 CSS
